@@ -1,5 +1,7 @@
 const fs = require("fs");
+const os = require("os");
 
+console.log(os.cpus().length);
 //Blocking --->> Synchronous
 console.log("1");
 const res = fs.readFileSync("./test.txt", "utf-8");
@@ -32,9 +34,11 @@ fs.readFile("./contect.txt", "utf-8", (err, res) => {
 console.log("2");
 console.log("3");
 
-
 // //output
 // 1
 // 2
 // 3
 // sushant: +912222222
+
+//default threadpool size = 4;
+//Max size=  depends on the size of the cpus of machine
