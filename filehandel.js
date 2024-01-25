@@ -42,8 +42,8 @@ const fs = require("fs");
 /*----------deleting the file---------- */
 // fs.unlinkSync("./copy.txt");
 
-/*----------------status of file--------- */
+// /*----------------status of file--------- */
 console.log(fs.statSync("./test.txt"));
 
-/*-----------making directory/folder----------- */
-fs.mkdirSync("my-docs");
+// /*-----------making directory/folder----------- */
+// fs.mkdirSync("my-docs");
