@@ -14,3 +14,7 @@ app.get(
     return res.send("Hello from About Page");
   })
 );
+
+const myServer = http.createServer(app);
+
+myServer.listen(8000, () => console.log("Server Started"));
